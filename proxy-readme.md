@@ -142,7 +142,7 @@ $> rake -f warble.rake
 There could be minor variations in the JRuby file names from one version to another.  If you run into problems running the rake task you may need to update the script based on the version of JRuby you are running.  When we moved from 1.7.13 to 1.7.18 the file names were pretty obvious and the changes trivial.  Pull requests are welcome.
 
 # Licensing
-All sample code contained within this project repository or any subdirectories is licensed according to the terms of the MIT license, which can be viewed in the file license.txt.
+All sample code contained within this project repository or any subdirectories is licensed according to the terms of the MIT license, which can be viewed in the [license file](/LICENSE).
 
 # Open Source @ IBM
 [Find more open source projects on the IBM Github Page](http://ibm.github.io/)
