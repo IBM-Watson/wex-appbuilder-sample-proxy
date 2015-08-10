@@ -15,7 +15,7 @@ $AB_HOME refers to the home folder for the specific Application Builder installa
 
 Create a new folder called 'proxy' in `$AB_HOME/wlp/usr/servers/AppBuilder/apps`
 
-Unzip the proxy WAR into the newly created proxy folder.  You should now have `$AB_HOME/wlp/usr/servers/AppBuilder/apps/proxy/META-INF` and `$AB_HOME/wlp/usr/servers/AppBuilder/apps/proxy/WEB-INF`.
+Once you've built the proxy WAR following the instructions below, unzip it into the newly created proxy folder.  You should now have `$AB_HOME/wlp/usr/servers/AppBuilder/apps/proxy/META-INF` and `$AB_HOME/wlp/usr/servers/AppBuilder/apps/proxy/WEB-INF`.
 
 Open server.xml, located at $AB_HOME/wlp/usr/servers/AppBuilder/ for editing.  Add the following block to the `server` node.
 
@@ -102,11 +102,11 @@ The proxy uses [Ruby Sinatra](http://www.sinatrarb.com/) to provide a REST style
 Once your changes are complete, restart Application Builder's WebSphere using the normal methods.
 
 
-## Bundling a new WAR
+## Bundling a Proxy WAR
 
-If new gems or other Java libraries are required, or if you want to package the proxy into a new WAR for any reason, you will need to set up a basic development environment for [JRuby](http://www.jruby.org/).  Ruby was chosen for the ease of implementation (using frameworks such as Sinatra) and to allow for modifications to be made in the proxy without requiring code to be recompiled.
+Using the Proxy requires that you package it for use in a Java application server.  This can be easily done once you're [JRuby](http://www.jruby.org/) development envirionement is set up.  Ruby was chosen for the ease of implementation (using frameworks such as Sinatra) and to allow for modifications to be made to a deployed proxy without requiring code to be recompiled in many cases.
 
-The proxy assumes `JRuby 1.7.18` for deployment but it might be possible to test the application in native `Ruby 1.9.3`.  The simplest approach is to use JRuby for development, testing, and deployment.
+The proxy assumes `JRuby 1.7.18` for deployment but it might be possible to test the application using a native Ruby.  The simplest approach is to use JRuby for development, testing, and deployment.
 
 The following JRuby Gems are required to get started.
 
@@ -122,7 +122,7 @@ $> bundle install
 ```
 
 
-Now the proxy can be run as a rack application for testing and development purposes.
+Now the proxy can be run as a Rack application for testing and development purposes.
 
 
 ```
