@@ -1,3 +1,5 @@
+**Note**: A proxy is not required with WEX 11+.  This sample code applies only for WEX versions **before** 11.0.
+
 # Application Builder Proxy
 
 The Application Builder Proxy is a thin server side component that serves two important purposes.
@@ -6,7 +8,7 @@ The Application Builder Proxy is a thin server side component that serves two im
 
 2. The proxy enables client-side interaction with external services via Ajax calls in the browser. Modern browser security prevents cross site Ajax requests due to the same-origin policy.
 
-[Watson Explorer Application Builder 11 and later includes a feature called Endpoints](http://www-01.ibm.com/support/knowledgecenter/SS8NLW_11.0.0/com.ibm.swg.im.infosphere.dataexpl.appbuilder.doc/c_de-ab-devapp-endpoints.html) which serves this purpose.  A proxy application like this one would not be needed if you are using version 11 of the software or later.
+[Watson Explorer Application Builder 11 and later includes a feature called Endpoints](http://www-01.ibm.com/support/knowledgecenter/SS8NLW_11.0.0/com.ibm.swg.im.infosphere.dataexpl.appbuilder.doc/c_de-ab-devapp-endpoints.html) which serves this purpose.  **A proxy application like this one is not be needed if you are using version 11 of the software or later.**
 
 
 # Installing the Sample Proxy
